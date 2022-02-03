@@ -1,0 +1,107 @@
+.banner {
+  position: relative;
+}
+
+.banner__img > img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner__container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner__container > p {
+  font-size: 28px;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.banner__container__button {
+  display: flex;
+  justify-content: center;
+}
+
+.banner__container__button > button {
+  font-weight: bold;
+  background-color: #fff;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 9999px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: transparent;
+  cursor: pointer;
+}
+
+.banner__container__button > button:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.banner__container__button > button > span {
+  font-size: 14px;
+  background: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 640px) {
+  .banner__img > img {
+    height: 400px;
+  }
+
+  .banner__container > p {
+    font-size: 28px;
+  }
+
+  .banner__container__button > button > span {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    background-color: #000;
+  }
+
+  .banner__img {
+    padding: 68px;
+  }
+
+  .banner__img > img {
+    height: 500px;
+    border-radius: 9px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner__img > img {
+    height: 500px;
+  }
+
+  .banner__container > p {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .banner__img > img {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .banner__img > img {
+    height: 700px;
+  }
+}

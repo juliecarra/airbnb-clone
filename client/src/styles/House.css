@@ -1,0 +1,136 @@
+.House__content {
+  padding: 0px 80px;
+}
+
+.House__header > h1 {
+  font-weight: 400;
+  margin-bottom: 4px !important;
+}
+
+.House__span {
+  color: #717171;
+}
+
+.House__img {
+  padding-top: 24px;
+}
+.House__img > img {
+  object-fit: cover;
+  border-radius: 9px;
+  width: 100%;
+  height: 400px;
+}
+
+.House__container--map--img {
+  display: flex;
+  flex-direction: column;
+}
+
+.House__info {
+  display: flex;
+  flex-direction: column;
+}
+.House--left {
+  position: relative !important;
+  width: 100%;
+}
+
+.House--right {
+  position: relative !important;
+  width: 100% !important;
+}
+
+.HouseInfo__header > h2 {
+  font-size: 32px;
+  font-weight: 400;
+
+  margin-bottom: 4px !important;
+}
+
+.HouseInfo__border {
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.HouseInfo__border--map {
+  border-bottom: 1px solid rgb(221, 221, 221);
+  width: 100%;
+}
+
+.HouseInfo__owner {
+  float: right;
+}
+
+.HouseInfo__clean,
+.HouseInfo--title {
+  display: flex;
+  align-items: flex-end;
+}
+
+.HouseInfo > h3 {
+  margin-left: 15px;
+  margin-bottom: 0px;
+
+  color: #222222;
+}
+
+.HouseInfo > p {
+  font-size: 14px;
+
+  color: #717171;
+}
+
+.HouseInfo__rule,
+.HouseInfo--title {
+  display: flex;
+  align-items: flex-end;
+}
+
+.HouseInfo > h3 {
+  margin-left: 15px;
+  margin-bottom: 0px;
+
+  color: #222222;
+}
+
+.HouseInfo__rule > p {
+  font-size: 14px;
+  color: #717171;
+}
+
+.HouseInfo__description {
+  color: #222222;
+}
+
+.HouseInfo__images {
+  display: flex;
+  flex-wrap: wrap;
+}
+.HouseInfo > img {
+  border-radius: 8px;
+}
+
+@media (min-width: 1024px) {
+  /* .House__container--map--img {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  } */
+  .House__info {
+    display: flex;
+    flex-direction: row;
+  }
+  .House--left {
+    position: relative !important;
+    width: 58.333333333333336% !important;
+  }
+  .House--right {
+    position: relative !important;
+    width: 33.33333333333333% !important;
+    margin-left: 8.333333333333332% !important;
+    margin-right: 0% !important;
+  }
+
+  .HouseInfo__border--map {
+    width: 88vw !important;
+  }
+}

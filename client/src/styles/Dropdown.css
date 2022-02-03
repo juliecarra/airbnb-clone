@@ -1,0 +1,30 @@
+.dropdown {
+  position: absolute;
+  top: 80%;
+  width: 17%;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25em;
+}
+
+.dropdown__item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(34, 34, 34) !important;
+  padding: 10px 5px 10px 12px;
+  font-size: 14px;
+}
+
+.dropdown__item:first-child {
+  font-weight: 500;
+}
+
+.dropdown__item:last-child {
+  font-weight: lighter;
+}
+
+.dropdown__item > svg {
+  width: 20px;
+}

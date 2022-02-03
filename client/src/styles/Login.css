@@ -1,0 +1,200 @@
+.Login {
+  position: fixed;
+  right: 0%;
+  top: 0%;
+
+  width: 100vw;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Login__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+.Login__content {
+  width: 100%;
+  height: fit-content;
+
+  background-color: #fff;
+
+  border-radius: 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.Login__content--2 {
+  width: 100%;
+  height: fit-content;
+
+  background-color: #fff;
+
+  border-radius: 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.Login__heading {
+  color: rgb(34, 34, 34);
+
+  font-size: 8px;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+h1 {
+  width: 40%;
+}
+
+.Login__icon {
+  width: 19px !important;
+}
+
+.Login__border {
+  border-bottom: 1px solid #e4e4e4;
+
+  width: 100vw;
+}
+
+.Login__form {
+  display: flex;
+  flex-direction: column;
+
+  overflow: scroll;
+
+  width: 80%;
+
+  padding: 50px;
+}
+
+.Login__form > .PhoneInputCountryIconImg {
+  display: none;
+}
+
+.Login__form > select {
+  width: 100%;
+  height: 56px;
+
+  border: 1px solid rgb(113, 113, 113);
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.Login__form > input {
+  width: -webkit-fill-available;
+  height: 56px;
+
+  border: 1px solid rgb(113, 113, 113);
+
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.Login__input {
+  border-radius: 12px !important;
+}
+
+.Login__submit {
+  background-image: radial-gradient(
+    circle at center center,
+    rgb(255, 56, 92) 0%,
+    rgb(230, 30, 77) 27.5%,
+    rgb(227, 28, 95) 40%,
+    rgb(215, 4, 102) 57.5%,
+    rgb(189, 30, 89) 75%,
+    rgb(189, 30, 89) 100%
+  ) !important;
+
+  border: none;
+  border-radius: 8px;
+
+  color: #fff !important;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  width: 100%;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px;
+}
+
+.Login__form > .Login__button {
+  background-color: transparent !important;
+
+  border: 2px solid rgb(176, 176, 176);
+  border-radius: 8px;
+
+  color: rgb(113, 113, 113);
+
+  font-size: 16px;
+  font-weight: 800;
+
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px;
+}
+
+span {
+  font-weight: lighter;
+  font-size: 12px;
+
+  text-align: center;
+}
+a {
+  color: rgb(34, 34, 34);
+  text-decoration: underline;
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+}
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .Login__content {
+    width: 42%;
+  }
+
+  .Login__border {
+    width: 42vw;
+  }
+
+  .Login__content--2 {
+    width: 42%;
+  }
+}

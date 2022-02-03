@@ -1,0 +1,36 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  background-color: rgb(247, 247, 247);
+}
+
+.footer__container {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.footer__container > p:nth-child(1) {
+  font-weight: bold;
+  text-decoration: none !important;
+  cursor: default !important;
+}
+
+.footer__container > p {
+  font-size: 14px;
+  color: #222;
+}
+
+.footer__container > p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 68px;
+  }
+  .footer__container {
+    border-bottom: none;
+  }
+}

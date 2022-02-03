@@ -1,0 +1,408 @@
+.Booking {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 12px;
+
+  padding: 24px;
+
+  margin-top: 30px;
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px;
+}
+
+.Booking__guest {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Booking__title {
+  font-size: 22px;
+  font-weight: 600;
+
+  color: #222222;
+}
+
+.Booking__form {
+  width: 100%;
+}
+
+.Booking__container {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid rgb(221, 221, 221);
+
+  background: #fff;
+
+  padding: 13px 36px 10px 12px !important;
+}
+
+.Booking__container > input {
+  background-color: transparent;
+
+  border: none !important;
+
+  width: 100%;
+
+  line-height: 1.7;
+
+  font-size: 16px;
+}
+
+.Booking__container > input:focus {
+  outline: none !important;
+}
+
+.Booking__container:first-child {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.Booking__container:nth-child(2n) {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.Booking__container > label {
+  font-size: 10px;
+  font-weight: 800;
+
+  line-height: 1.1;
+}
+
+.Booking__button {
+  background-image: radial-gradient(
+    circle at center center,
+    rgb(255, 56, 92) 0%,
+    rgb(230, 30, 77) 27.5%,
+    rgb(227, 28, 95) 40%,
+    rgb(215, 4, 102) 57.5%,
+    rgb(189, 30, 89) 75%,
+    rgb(189, 30, 89) 100%
+  );
+
+  border: none;
+  border-radius: 8px;
+
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 20px;
+  margin: -5px 0px 0px 0px;
+  cursor: pointer;
+}
+
+.Booking__button > button:disabled {
+  background-color: #ced4da !important;
+}
+
+.Booking__infos {
+  color: rgb(34, 34, 34) !important;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Booking__infos > p,
+.Booking__total > p {
+  color: #222;
+}
+
+.Booking__infos > p:first-child {
+  text-align: center;
+}
+
+.daterangepicker td.in-range {
+  background-color: #ff385c;
+}
+
+.daterangepicker td.active {
+  background-color: #ff385c !important;
+}
+
+.btn-primary {
+  background-color: #ff385c !important;
+}
+
+.form-control {
+  border: none;
+}
+
+.info {
+  color: #222 !important;
+  margin-left: 0px;
+}
+
+.booking-modal {
+  font-size: 14px;
+  color: #717171;
+  font-weight: 100;
+}
+.booking-modal > .title {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.buttons {
+  margin: 15px 0px;
+}
+
+.btn-confirm {
+  background-color: rgb(70, 4, 121) !important;
+  color: rgb(70, 4, 121);
+  font-weight: 700;
+}
+
+.btn-cancel {
+  background-color: #fff !important;
+  color: red;
+  font-weight: 700;
+}
+
+.booking-modal > em {
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.booking-modal > p {
+  margin: 0;
+}
+
+.react-responsive-modal-modal {
+  max-width: none !important;
+
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  padding: 3.2em !important;
+}
+
+.modal-footer {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+button:disabled {
+  background-color: #717171;
+}
+
+.BookingModal > .BookingModal__container {
+  display: flex;
+  flex-direction: column;
+}
+.BookingModal--right {
+  flex: 0.5;
+}
+
+.BookingModal--right > .BookingModal__house,
+.BookingModal--right > .BookingModal__total {
+  border: 1px solid rgb(221, 221, 221);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.BookingModal--right > h2 {
+  color: rgb(34, 34, 34);
+}
+
+.BookingModal--right > img {
+  object-fit: cover;
+}
+
+.BookingModal--right > span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #717171;
+}
+
+.BookingModal__booking {
+  border: 1px solid rgb(221, 221, 221);
+  border-top: none;
+  border-bottom: none;
+}
+
+.BookingModal__booking > p {
+  display: flex;
+  align-items: center;
+  color: #717171;
+  margin-left: 0px;
+}
+
+.BookingModal__btn--confirm {
+  background-color: green;
+
+  border: none;
+  border-radius: 8px;
+
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  /* width: 100%;
+       height: 100%; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 10px;
+  margin: -5px 0px 0px 0px;
+
+  cursor: pointer;
+}
+.BookingModal__btn--cancel {
+  background-color: red;
+
+  border: none;
+  border-radius: 8px;
+
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  /* width: 100%;
+       height: 100%; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 10px;
+  margin: -5px 0px 0px 0px;
+
+  cursor: pointer;
+}
+
+/* Style for BookingManage */
+#userBookings > .c {
+  margin-bottom: 20px;
+}
+
+#userBookings > h1 {
+  margin-bottom: 20px;
+}
+
+#userBookings > .c-block {
+  padding: 20px;
+}
+
+#userBookings > .c-header {
+  text-transform: capitalize;
+}
+
+#userBookings > .c-title {
+  font-size: 18px;
+}
+
+.booking > .Booking-desc {
+  font-size: 14px;
+}
+
+.Booking-days {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.Booking-price-value {
+  font-weight: 700;
+}
+
+.col-md-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.c {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.c-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.c-title {
+  margin-bottom: 0.5rem;
+}
+
+.c-footer {
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.btn-booking {
+  color: #fff;
+  background-color: #ff385c;
+  border-color: #ff385c;
+}

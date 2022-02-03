@@ -1,0 +1,26 @@
+.wizard__button {
+  display: flex;
+  overflow: scroll;
+}
+
+.wizard__button > button {
+  color: rgb(113, 113, 113);
+  background-color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 14px;
+  border-radius: 9px;
+}
+
+.wizard__button > button:hover {
+  background-color: #ebebeb;
+  padding: 14px;
+  border-radius: 9px;
+}
+
+.wizard__border {
+  border-bottom: 1px solid #ebebeb;
+  margin-top: 10px;
+}

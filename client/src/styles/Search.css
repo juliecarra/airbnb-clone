@@ -1,0 +1,37 @@
+.search__container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #eee;
+}
+
+.search__container > p {
+  color: #222;
+  font-size: 0.75rem;
+  font-size: 14px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+.search__container > p > span {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search__component {
+  display: flex;
+}
+
+.search__container--2 {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .search__container--2 {
+    /* display: inline-flex; */
+    min-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
