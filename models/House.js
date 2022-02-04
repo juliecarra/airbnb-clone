@@ -46,13 +46,13 @@ const houseSchema = new Schema(
   }
 );
 
-houseSchema.pre("save", async function (next) {
-  const loc = await geocoder.geocode(this.address);
-  this.location.push(loc[0].latitude, loc[0].longitude);
-  this.address = undefined;
+// houseSchema.pre("save", async function (next) {
+//   const loc = await geocoder.geocode(this.address);
+//   this.location.push(loc[0].latitude, loc[0].longitude);
+//   this.address = undefined;
 
-  next();
-});
+//   next();
+// });
 
 const House = mongoose.model("House", houseSchema);
 module.exports = House;

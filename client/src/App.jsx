@@ -9,13 +9,11 @@ import Host from "./pages/Host";
 import House from "./pages/House";
 import ManageHouse from "./pages/ManageHouse";
 import BookingManage from "./pages/BookingManage";
+import { STRIPE_API } from "./configs/dev";
 
 function App() {
   return (
-    <StripeProvider
-      apiKey="pk_test_5Rm43jFTyejDme7DVCGe3ysg00yqiEg949
-    "
-    >
+    <StripeProvider apiKey={STRIPE_API}>
       <div>
         <Switch>
           <Route exact path="/" component={Home} />

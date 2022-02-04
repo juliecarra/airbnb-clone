@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { fetchHouses } from "../actions";
 import { connect } from "react-redux";
+import { GOOGLE_MAP_API } from "../configs/dev";
 
 import {
   InfoWindow,
@@ -138,7 +139,7 @@ class Map extends Component {
         selectedMarker={this.state.selectedMarker}
         markers={houses}
         onClick={this.handleMarkerInfo}
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyCUedWvtn21AhooPEll1tYtm6F3LZzufYc&libraries=geometry,drawing,places`}
+        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAP_API}&libraries=geometry,drawing,places`}
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ height: `100%` }} />}
         mapElement={<div style={{ height: `100%` }} />}

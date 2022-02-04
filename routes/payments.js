@@ -159,7 +159,7 @@ router.post(
         return res.status(422).send(err);
       }
 
-      Payment.update(
+      Payment.updateOne(
         { _id: payment._id },
         { status: "Declined" },
         function () {}
